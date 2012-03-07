@@ -1,0 +1,15 @@
+$ cat .gitignore
+
+#PHPStorm Project files
+.idea
+
+#Zend Studio Project Files
+.settings
+.buildpath
+.project
+
+#Visual Studio VS.PHP Project Files
+.vsphpignore
+f!.intellisense.cache
+f!.phpproj
+f!.sln
