@@ -1,14 +1,17 @@
-'''Change before use:'''
+F - Framework for PHP
+======================
+
+**Change before use:**
 	1. Both .htaccess files (RewriteBase)
 	2. config.php (admin & root) - The 'ABS' Constant value
 	3. The 'DEVELOPMENT_ENVIRONMENT' Constant value
 	
-'''Use of Language Class:'''
+**Use of Language Class:**
 	1. use init_language(optional $language = 'english') within your Controller to initialize the Language Class
 	2. create a file '$language.lang.php' under root/application/library/languages/
 	3. use varibales '$lang["word"]' & '$language["word"]' in your template to print words
 	
-'''Use of Authetication Class:'''
+**Use of Authetication Class:**
 
 Standard SQL-Table for User (*):
 CREATE TABLE `users` (
@@ -24,10 +27,10 @@ CREATE TABLE `users` (
    PRIMARY KEY (`user_id`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8 AUTO_INCREMENT=1;
 
-*All fields are required!
+*All fields are required!*
 
 
-'''User Authorization Levels'''
+**User Authorization Levels**
 0: God level - Can access everything everywhere. (Only for developers)
 1: Administrator - The highest possible user level. Similar to 'God level'
 2: Editor - Can create everything. Can edit everything. Can delete posts.
