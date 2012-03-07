@@ -1,3 +1,6 @@
+F - Framework for PHP
+======================
+
 '''Change before use:'''
 	1. Both .htaccess files (RewriteBase)
 	2. config.php (admin & root) - The 'ABS' Constant value
