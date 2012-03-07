@@ -33,10 +33,10 @@ Standard SQL-Table for User (*):
 *All fields are required!*
 
 
-**User Authorization Levels**
-+ 0: God level - Can access everything everywhere. (Only for developers)
-+ 1: Administrator - The highest possible user level. Similar to 'God level'
-+ 2: Editor - Can create everything. Can edit everything. Can delete posts.
-+ 3: Author - Can create posts, tags, cats, pages, comments. Upload files.
-+ 4: Contributor - Can comment, post in forum.
-+ 5: Subscriber - Can read private contents.
+**User Authorization Levels:**
++  0: God level - Can access everything everywhere. (Only for developers)
++  1: Administrator - The highest possible user level. Similar to 'God level'
++  2: Editor - Can create everything. Can edit everything. Can delete posts.
++  3: Author - Can create posts, tags, cats, pages, comments. Upload files.
++  4: Contributor - Can comment, post in forum.
++  5: Subscriber - Can read private contents.
