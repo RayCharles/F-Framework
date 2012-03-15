@@ -1,6 +1,7 @@
 <?php
 
 return array (
+    'version' => '0.12.3.11',
     'db_access' => array ( 'default' => array ( 'username' => 'root', 'password' => '', 'host' => 'localhost', 'database' => 'framework' ) ),
     'db_current' => 'default',
     'template_file_path' => ROOT . DS . APPS . DS . 'Views',

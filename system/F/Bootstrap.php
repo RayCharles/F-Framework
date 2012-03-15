@@ -11,11 +11,6 @@
  */
 require_once ROOT . DS . FRAMEWORK . DS . CORE . DS . 'common.php';
 
-/**
- * ---------------------Load all configurations---------------------------------
- */
-F_Configuration::setFile( ROOT . DS . APPS . DS . 'config' . DS . 'config.php' );
-
 /*
  * -------------------- Set error reporting ------------------------------------
  */
