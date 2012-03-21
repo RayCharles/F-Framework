@@ -9,7 +9,7 @@ define('APPS', 'application');
 define('CORE', 'F');
 
 define ( 'DEVELOPMENT_ENVIRONMENT', TRUE ); // !important //@todo: Find better place for this
-define ( 'ABS', 'http://localhost/active/store1212/2' ); // without backslash at the end
+define ( 'ABS', 'http://localhost/Framework' ); // without backslash at the end
                                           // //!important //Change in htdocs
                                           // RewriteBase
 

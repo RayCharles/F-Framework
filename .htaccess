@@ -3,10 +3,10 @@ IndexIgnore */*
 # Turn on the RewriteEngine
 RewriteEngine On
 #  Rules
-RewriteBase /Framework
-RewriteCond %{REQUEST_URI} !\.css$
-RewriteCond %{REQUEST_URI} !\.png$
-RewriteCond %{REQUEST_URI} !\.js$
+RewriteBase /Framework/
+	#RewriteCond %{REQUEST_URI} !\.css$
+	#RewriteCond %{REQUEST_URI} !\.png$
+	#RewriteCond %{REQUEST_URI} !\.js$
 RewriteCond %{REQUEST_FILENAME} !-f
 RewriteCond %{REQUEST_FILENAME} !-d
 RewriteRule . index.php [NC]

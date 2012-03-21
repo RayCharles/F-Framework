@@ -15,7 +15,6 @@ abstract class F_Controller {
 	$this->_view->set_default_path( $this->_configs->template_file_path . DS . F_Router::getInstance()->getController() );
 
 	$this->_init();
-    register_shutdown_function(array($this, 'end_controller'));
     }
 
     /**
@@ -32,9 +31,4 @@ abstract class F_Controller {
     protected abstract function _init();
 
     public abstract function defaultAction();
-
-    public static function end_controller()
-    {
-        
-    }
 }

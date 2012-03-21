@@ -3,18 +3,21 @@
 </head>
 Framework Log
 <div>
-	+Caching
-	+Configuration
+    +Caching
+    +Configuration
 </div>
 
 <hr />
 
 <div>
-	~Improved auto_loading
+    ~Improved auto_loading
+</div>
+<div>
+    ~Improved the database class
 </div>
 
 <hr />
 
 <div>
-	% Add new Model Class
+    % Add new Model Class
 </div>
