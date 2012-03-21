@@ -124,7 +124,7 @@ abstract class F_Model
 		$object = $this->db->fetch_object();
 
 		if ( $single ) {
-			$this->assign_attrs( $this, $object[0] );
+			$this->assign_attrs( $this, $object[ 0 ] );
 		} else {
 			$result = array();
 			foreach ( $object as $model ) {
@@ -219,7 +219,7 @@ abstract class F_Model
 	{
 		foreach ( get_object_vars( $object ) as $attr => $value ) {
 			$model->$attr = $object->$attr;
-//			var_dump( $object->$attr);
+			//			var_dump( $object->$attr);
 		}
 		return $model;
 	}
@@ -235,6 +235,12 @@ abstract class F_Model
 		$pk_field = $this->_primary;
 
 		unset( $data[ $this->_primary ] ); //Prevent PK from being updated
+
+
+		if ( !F_Validation::getInstance()->validate( $data, $this->_fields ) ) {
+			return FALSE;
+		}
+
 		//	if ( $this->_modified ) { TODO: modification toggle! Model
 		if ( isset( $this->$pk_field ) ) {
 			$this->db->update( $this->_table, $data )->_where( array( $this->_primary, '=',
@@ -246,6 +252,7 @@ abstract class F_Model
 			$this->$pk_field = $this->db->last_insert_id();
 			$this->_modified = FALSE;
 		}
+
 		//	}
 	}
 
@@ -254,10 +261,9 @@ abstract class F_Model
 		$pk_field = $this->_primary;
 		if ( isset( $this->$pk_field ) ) {
 			$this->db->delete_from( $this->_table )->_where( array( $this->_primary, '=',
-			                                                     $this->$pk_field ) )->execute();
+			                                                      $this->$pk_field ) )->execute();
 			echo F_Db::getInstance()->last_query();
 			$this->__destruct();
 		}
 	}
-
 }

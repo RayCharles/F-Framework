@@ -5,6 +5,7 @@ Framework Log
 <div>
     +Caching
     +Configuration
+	+Validation
 </div>
 
 <hr />

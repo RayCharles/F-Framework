@@ -17,18 +17,19 @@ F - Framework for PHP
 
 Standard SQL-Table for User (*):
 
-`CREATE TABLE users (
-   user_id int(11) not null auto_increment,
-   user_username varchar(100),
-   user_password text,
-   user_email varchar(150),
-   user_last_login int(11),
-   user_last_ip varchar(30),
-   user_status int(1) default '0',
-   user_activation_key varchar(50),
-   user_registered int(11),
-   PRIMARY KEY (user_id)
-) ENGINE=InnoDB DEFAULT CHARSET=utf8 AUTO_INCREMENT=1;`
+`CREATE TABLE IF NOT EXISTS users (`
+ ` user_id int(11) NOT NULL AUTO_INCREMENT,`
+ ` user_username varchar(100) DEFAULT NULL,`
+ ` user_password text,`
+ ` user_email varchar(150) DEFAULT NULL,`
+ ` user_last_login int(11) DEFAULT NULL,`
+ ` user_last_ip varchar(30) DEFAULT NULL,`
+ ` user_status int(1) DEFAULT '0',`
+ ` user_activation_key varchar(50) DEFAULT NULL,`
+ ` user_registered int(11) DEFAULT NULL,`
+ ` PRIMARY KEY (user_id),`
+ ` UNIQUE KEY user_username (user_username,user_email)`
+`) ENGINE=InnoDB  DEFAULT CHARSET=utf8;`
 
 *All fields are required!*
 
